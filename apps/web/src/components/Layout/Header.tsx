@@ -7,7 +7,7 @@ interface HeaderProps {
 }
 
 export default function Header({ onMenuClick, darkMode, onToggleDarkMode }: HeaderProps) {
-  const { notifications, unreadCount } = useNotificationStore()
+  const { unreadCount } = useNotificationStore()
 
   return (
     <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">

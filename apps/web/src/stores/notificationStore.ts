@@ -110,8 +110,8 @@ export const useNotificationStore = create<NotificationState>((set, get) => ({
   filterNotifications: (criteria) => {
     const { notifications } = get();
     return notifications.filter((notification) => {
-      return Object.keys(criteria).every((key) => {
-        return notification[key] === criteria[key];
+      return Object.entries(criteria).every(([key, value]) => {
+        return notification[key as keyof NotificationData] === value;
       });
     });
   },

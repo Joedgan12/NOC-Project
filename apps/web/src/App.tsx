@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useAuthStore } from '@/stores/authStore'
-import { useNotificationStore } from '@/stores/notificationStore'
 import { supabase } from '@/services/supabase'
 
 // Layout Components
@@ -17,19 +16,15 @@ import TechnicianWorkload from '@/pages/Technicians/TechnicianWorkload'
 import AuditLogs from '@/pages/Audit/AuditLogs'
 import AdminPanel from '@/pages/Admin/AdminPanel'
 
-// Utilities
-import { initializeNotifications } from '@/services/notifications'
-
 function App() {
   const { user, setUser, setLoading } = useAuthStore()
-  const { initialize: initializeNotifications } = useNotificationStore()
 
   useEffect(() => {
     // Check initial auth state
     const checkAuth = async () => {
       try {
         const { data: { session } } = await supabase.auth.getSession()
-        setUser(session?.user ?? null)
+        setUser(session?.user as unknown as import("@/types/index").User | null)
       } catch (error) {
         console.error('Error checking auth state:', error)
       } finally {
@@ -39,20 +34,15 @@ function App() {
 
     // Listen for auth changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (event, session) => {
-        setUser(session?.user ?? null)
-        
-        if (session?.user) {
-          // Initialize notifications for authenticated users
-          await initializeNotifications()
-        }
+      async (_event, session) => {
+        setUser(session?.user as unknown as import("@/types/index").User | null)
       }
     )
 
     checkAuth()
 
     return () => subscription.unsubscribe()
-  }, [setUser, setLoading, initializeNotifications])
+  }, [setUser, setLoading])
 
   // Show loading spinner while checking auth
   if (useAuthStore.getState().loading) {

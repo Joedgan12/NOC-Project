@@ -38,8 +38,8 @@ const mockData = {
 
 export default function Dashboard() {
   const { user } = useAuthStore()
-  const [metrics, setMetrics] = useState(mockData.metrics)
-  const [recentAlerts, setRecentAlerts] = useState(mockData.alerts)
+  const [metrics] = useState(mockData.metrics)
+  const [recentAlerts] = useState(mockData.alerts)
 
   useEffect(() => {
     // In a real app, fetch dashboard data here

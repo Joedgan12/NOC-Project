@@ -1,6 +1,17 @@
+/* Ensure Tailwind CSS is properly configured */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ensure PostCSS is configured to process Tailwind directives */
+/* Add this to your postcss.config.js if not already present:
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+*/
 
 @layer base {
   html {

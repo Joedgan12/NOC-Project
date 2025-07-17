@@ -42,11 +42,11 @@ export async function subscribeToWebPush() {
       throw new Error('Service worker not registered')
     }
 
+    const vapidPublicKey = (import.meta as any).env.VITE_VAPID_PUBLIC_KEY || '';
+
     const subscription = await registration.pushManager.subscribe({
       userVisibleOnly: true,
-      applicationServerKey: urlBase64ToUint8Array(
-        import.meta.env.VITE_VAPID_PUBLIC_KEY || ''
-      )
+      applicationServerKey: urlBase64ToUint8Array(vapidPublicKey)
     })
 
     // Send subscription to server
