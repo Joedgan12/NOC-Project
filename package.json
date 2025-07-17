@@ -1,0 +1,32 @@
+{
+  "name": "noc-dashboard-system",
+  "version": "1.0.0",
+  "description": "Network Operations Center Dashboard System for Plugins Fiber",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/mobile",
+    "apps/backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:backend\"",
+    "dev:web": "cd apps/web && npm run dev",
+    "dev:mobile": "cd apps/mobile && npm run start",
+    "dev:backend": "cd apps/backend && npm run dev",
+    "build": "npm run build:web && npm run build:backend",
+    "build:web": "cd apps/web && npm run build",
+    "build:backend": "cd apps/backend && npm run build",
+    "install:all": "npm install && npm run install:web && npm run install:mobile && npm run install:backend",
+    "install:web": "cd apps/web && npm install",
+    "install:mobile": "cd apps/mobile && npm install", 
+    "install:backend": "cd apps/backend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

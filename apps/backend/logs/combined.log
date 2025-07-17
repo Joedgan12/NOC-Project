@@ -1,0 +1,39 @@
+2025-07-14 18:34:01 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-14 18:34:01 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-14 18:34:01 [INFO]: 📝 Environment: development
+2025-07-14 18:35:22 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-14 18:35:22 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-14 18:35:22 [INFO]: 📝 Environment: development
+2025-07-14 19:55:49 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-14 19:55:49 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-14 19:55:49 [INFO]: 📝 Environment: development
+2025-07-14 19:56:02 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-14 19:56:02 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-14 19:56:02 [INFO]: 📝 Environment: development
+2025-07-14 19:56:15 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-14 19:56:15 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-14 19:56:15 [INFO]: 📝 Environment: development
+2025-07-14 19:56:28 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-14 19:56:28 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-14 19:56:28 [INFO]: 📝 Environment: development
+2025-07-14 19:58:08 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-14 19:58:08 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-14 19:58:08 [INFO]: 📝 Environment: development
+2025-07-14 19:58:16 [INFO]: ::1 - - [14/Jul/2025:16:58:16 +0000] "GET /health HTTP/1.1" 200 92 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-14 19:58:18 [INFO]: ::1 - - [14/Jul/2025:16:58:18 +0000] "GET /favicon.ico HTTP/1.1" 404 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-14 19:58:51 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-14 19:58:51 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-14 19:58:51 [INFO]: 📝 Environment: development
+2025-07-14 19:59:24 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-14 19:59:24 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-14 19:59:24 [INFO]: 📝 Environment: development
+2025-07-14 19:59:38 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-14 19:59:38 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-14 19:59:38 [INFO]: 📝 Environment: development
+2025-07-14 20:37:31 [INFO]: ::1 - - [14/Jul/2025:17:37:31 +0000] "GET / HTTP/1.1" 404 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+2025-07-15 08:39:15 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-15 08:39:15 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-15 08:39:15 [INFO]: 📝 Environment: development
+2025-07-15 10:45:57 [INFO]: 🚀 NOC Backend API running on port 5000
+2025-07-15 10:45:57 [INFO]: 📊 Health check: http://localhost:5000/health
+2025-07-15 10:45:57 [INFO]: 📝 Environment: development
